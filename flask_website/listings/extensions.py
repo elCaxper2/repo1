@@ -691,7 +691,7 @@ extensions = [
         docs='https://github.com/akhilputhiry/flask-keycloak/blob/master/README.md',
         github='akhilputhiry/flask-keycloak',
     ),   
-    Extension('Flask-MailboxValidator', 'MailboxValidator,
+    Extension('Flask-MailboxValidator', 'MailboxValidator',
         description='''
             <p>
               Flask-MailboxValidator provides an easy way to call the MailboxValidator API which validates if an email address is a valid one.
