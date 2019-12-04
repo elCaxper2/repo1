@@ -6,6 +6,9 @@ RUN apk add --update py2-pip
 RUN ls /
 RUN ls .
 
+RUN apt-get update
+RUN apt-get install -y git
+
 RUN git clone https://github.com/elCaxper2/repo1.git -b master
 # install Python modules needed by the Python app
 COPY /repo1/requirements.txt /usr/src/app/
