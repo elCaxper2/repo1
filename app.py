@@ -7,6 +7,10 @@ def hello():
     return "Hello World!"
 
 
+@app.route("/about")
+def about():
+    return "<h1 style='color: red;'>GGPR WEB IN DOCKER!</h1>"
+	
 @app.route('/<name>')
 def hello_name(name):
     return "Hello {}!".format(name)
