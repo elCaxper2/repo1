@@ -5,9 +5,10 @@ FROM alpine:3.5
 RUN apk add --update py2-pip
 RUN ls /
 RUN ls .
-RUN ls /var/lib/docker/tmp/* -la
+
+RUN git clone https://github.com/elCaxper2/repo1.git -b master
 # install Python modules needed by the Python app
-COPY requirements.txt /usr/src/app/
+COPY /repo1/requirements.txt /usr/src/app/
 RUN pip install --no-cache-dir -r /usr/src/app/requirements.txt
 
 # copy files required for the app to run
